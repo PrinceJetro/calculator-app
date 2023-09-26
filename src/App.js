@@ -134,6 +134,11 @@ function App() {
   }
 
   function reset(){
+    let divide = document.getElementById("divide").innerHTML="/";
+    let plus = document.getElementById("plus").innerHTML="+";
+    let minus = document.getElementById("minus").innerHTML="-";
+    let multiply = document.getElementById("multiply").innerHTML="X";
+     theme()
     setCount("")
   }
 
