@@ -14,14 +14,6 @@
 
 }
 
-.screen{
-  color: #f1f1f1;
-  background-color:#282c34;
-  width: 100%;
-  border-radius: 10px;
-  padding: 10px;
-  height:62px;
-}
 
 .screen h1{
   text-align: right;
@@ -58,7 +50,7 @@
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .button {
     background-color: #f1f1f1;
     width: 75px;
@@ -70,10 +62,21 @@
     font-weight: 500;
     cursor: pointer;
   }
+
+  .screen{
+    color: #f1f1f1;
+    background-color:#282c34;
+    border-radius: 10px;
+    overflow:hidden;
+    white-space: nowrap;
+    height:75px;
+    padding:10px;
+    width: 60vh;
+  }
   
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .button {
     background-color: #f1f1f1;
     width: 60px;
@@ -84,6 +87,14 @@
     border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
+  }
+
+  .screen{
+    color: #f1f1f1;
+    background-color:#282c34;
+    border-radius: 10px;
+    height:75px;
+    padding:10px;
   }
   
 }

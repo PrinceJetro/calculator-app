@@ -7,6 +7,27 @@ function App() {
 
     
   const handleDivClick = (event) => {
+
+    if (window.matchMedia("(max-width: 500px)").matches) {
+      // Your code here
+      console.log("Screen width is 500 pixels or less");
+      const editableDiv = document.getElementById('screen');
+      const maxLength = 13;
+  
+      if (editableDiv.textContent.length >= maxLength) {
+        // editableDiv.textContent = editableDiv.textContent.slice(0, maxLength);
+        console.log("reached")
+        document.getElementById('screen').style.overflow="hidden"
+        document.getElementById('screen').style.width="320px"
+
+      }
+      // Add your specific functionality for small screens here
+    }
+    else{
+      console.log("Screen width is 600 pixels more");
+    }
+
+    
       let divide = document.getElementById("divide");
       let plus = document.getElementById("plus");
       let minus = document.getElementById("minus");
@@ -219,6 +240,13 @@ if (checkbox.checked) {
 }
 
 
+
+
+
+
+
+
+
   return (
     <div className="App" id="app">
       <div className='buttons_div' id='buttons_div'>
@@ -234,7 +262,7 @@ if (checkbox.checked) {
 
 
       {/* screen */}
-      <div className='screen mb-3' id="screen">
+      <div className='screen mb-3' id="screen" >
         <h1>{count}</h1>
       </div>
       
