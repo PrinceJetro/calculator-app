@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState } from 'react';
 
 function App() {
-    const [count, setCount] = useState("0");
+    const [count, setCount] = useState("");
 
     
   const handleDivClick = (event) => {
@@ -134,7 +134,7 @@ function App() {
   }
 
   function reset(){
-    setCount(0)
+    setCount("")
   }
 
 
@@ -147,11 +147,11 @@ function App() {
           return setCount(count.substring(0, count.length - 1));
       } else {
           // Handle the case where count is an empty string
-          setCount(0);
+          setCount("");
       }
   } else {
       // Handle the case where count is not a string
-      setCount(0);
+      setCount("");
   }
   
     
@@ -257,7 +257,7 @@ if (checkbox.checked) {
         <div className='button' onClick={handleDivClick} id='point'>.</div>
         <div className='button' onClick={handleDivClick} id='zero'>0</div>
         <div className='button' onClick={handleDivClick} id='divide'>/</div>
-        <div className='button' onClick={handleDivClick} id='multiply'>X</div>
+        <div className='button' onClick={handleDivClick} id='multiply'> X </div>
         </div>
         <div className='flex-container'>
         <div className='button' id='reset' onClick={reset}>RESET</div>
